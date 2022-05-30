@@ -47,16 +47,16 @@ This setup creates the following resources:
 - Pushing - `docker push <ecr_url_from_tf_outputs>:latest`
 
 #### Checking
-Copy ALB DNS name from tf outputs and paste it in your browser:
+##### Copy ALB DNS name from tf outputs and paste it in your browser:
   - "/" just show a message
   - "/dbcreate" - will create database "my_tests"
   - "/dbdrop" - will drop database "my_tests"
   - (ToDo - add "SHOW DATABASES;" stdout to output)
-Connect to the bastion host:
+##### Connect to the bastion host:
   - Take bastion public IP address from tf outputs and use `ssh -i /<path_to_tf-code_directory>/keys/id_rsa_simple_test ec2-user@<bastion_ip_address>`
-Connect to the ECS cluster node:
+##### Connect to the ECS cluster node:
   - From bastion host - `ssh -i ~/.ssh/id_rsa_simple_test ec2-user@<node_private_ip_address>
-Connect to RDS:
+##### Connect to RDS:
   - From bastion host - `mysql -uroot -p<password_from_app.py> -h<rds_dns_name_from_app.py>` (ToDo - use different user, remove hardcode)
   - `SHOW DATABASES;`
 
