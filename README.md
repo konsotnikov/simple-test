@@ -21,10 +21,9 @@ This setup creates the following resources:
 - An ECR for the docker images
 - An ECS cluster with a service and task definition to run docker containers from the ECR
 - An RDS in private subnet
-- An EC2 as bastion host- Secrets - a Terraform module that creates many secrets based on a `map` input value, and has a list of secret ARNs as an output value
+- An EC2 as bastion host
 - Key pair for SSH access (generated only for this project)
 
-Something
 
 <!-- ![example](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2018/01/26/Slide5.png "Infrastructure illustration")
 (Source: https://aws.amazon.com/de/blogs/compute/task-networking-in-aws-fargate/)
