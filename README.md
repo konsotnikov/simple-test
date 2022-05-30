@@ -24,6 +24,17 @@ This setup creates the following resources:
 - An EC2 as bastion host
 - Key pair for SSH access (generated only for this project)
 
+### Get Started building your own infrastructure
+
+- Install terraform version 1.2.1
+- Install aws cli
+- Install docker-ce
+- AWS profile configuration `aws configure` and add your AWS_SECRET_ACCESS_KEY and AWS_SECRET_KEY 
+  (It is on your own. There are many secure options how to share your secrets with terraform.)
+- Generate a key pair `ssh-keygen -f /<path_to_tf-code_directory>/id_rsa_simple_test` to EC2 access
+- Choose TF backend in provider.tf (local by default)
+- Fill out "Dynamic Variables" in variables.tf (ToDo - remove all hardcode for subnets and DB password)
+- `terraform init && terraform apply`
 
 <!-- ![example](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2018/01/26/Slide5.png "Infrastructure illustration")
 (Source: https://aws.amazon.com/de/blogs/compute/task-networking-in-aws-fargate/)
