@@ -51,7 +51,7 @@ This setup creates the following resources:
   - "/" just show a message
   - "/dbcreate" - will create database "my_tests"
   - "/dbdrop" - will drop database "my_tests"
-  - (ToDo - add "SHOW DATABASES;" stdout to output)
+  - (ToDo - add "SHOW DATABASES;" output)
 ##### Connect to the bastion host:
   - Take bastion public IP address from tf outputs and use `ssh -i /<path_to_tf-code_directory>/keys/id_rsa_simple_test ec2-user@<bastion_ip_address>`
 ##### Connect to the ECS cluster node:
