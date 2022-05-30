@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Connect to MySQL server
 cnx = mysql.connector.connect(
-    host="simple-rds-test.chderbmwygbw.us-east-2.rds.amazonaws.com", ##ToDo - remove hardcode here
+    host="<rds_dns_host_from_output>", ##ToDo - remove hardcode here
     port=3306,
     user="root",
     password="Some_Password_12345")

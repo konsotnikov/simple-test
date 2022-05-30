@@ -42,9 +42,10 @@ variable "db_password" {
 
 ## ToDo - remove hardcode
 variable "container_image" {
-  default     = "314808989510.dkr.ecr.us-east-2.amazonaws.com/simple-test"
+  default     = "<aws_ecr_repository.main.repository_url>/simple-test"
 }
 
+## ToDo: needs to change
 variable "bastion-acess-ips" {
   description = "List of IPs for Bastion access. Should not use 0.0.0.0/0"
   default     = ["0.0.0.0/0"]
