@@ -35,7 +35,7 @@ def dbdrop():
 def index():
 #    host_ip = request.remote_addr
 #    return 'Do not Worry! <br /> App IP is ' + host_ip, 200, {'ContentType': 'application/json'}
-    return 'Welcome to the SIMPLE TEST Project <br /> Do not Worry!, 200, {'ContentType': 'application/json'}
+    return 'Welcome to the SIMPLE TEST Project <br /> Do not Worry!', 200, {'ContentType': 'application/json'}
 
 
 # Main func

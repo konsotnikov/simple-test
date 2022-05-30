@@ -13,7 +13,7 @@ output "aws_ecr_repository_url" {
     description = "ECR repository URL:"
 }
 
-output "instance_ip_addr" {
+output "bastion_ip_address" {
   value = aws_eip.bastion_eip.public_ip
   description = "Bastion host public IP:"
 }

@@ -25,13 +25,13 @@ EOF
   }
 
   provisioner "file" {
-    source      = "id_rsa_simple_test*"
+    source      = "keys/"
     destination = "/home/ec2-user/.ssh/"
 
     connection {
       type     = "ssh"
       user     = "ec2-user"
-      private_key = "${file("id_rsa_simple_test")}"
+      private_key = "${file("./keys/id_rsa_simple_test")}"
       host     = aws_instance.bastion.public_ip
     }
   }

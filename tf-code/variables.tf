@@ -75,7 +75,7 @@ variable "health_check_path" {
 
 variable "pub_key_ssh" {
   description = "Path to public key to ssh into instance."
-  default     = "./id_rsa_simple_test.pub"
+  default     = "./keys/id_rsa_simple_test.pub"
 }
 
 resource "aws_key_pair" "main" {
