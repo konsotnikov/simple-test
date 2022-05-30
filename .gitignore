@@ -1,3 +1,5 @@
 tfcode/.terraform
 tfcode/state
 tfcode/.terraform.lock.hcl
+tfcode/id_rsa_simple_test
+tfcode/id_rsa_simple_test.pub

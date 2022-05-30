@@ -32,7 +32,7 @@ EOF
       type     = "ssh"
       user     = "ec2-user"
       private_key = "${file("id_rsa_simple_test")}"
-      host     = aws_instance.bastion.ip_address
+      host     = aws_instance.bastion.public_ip
     }
   }
 
