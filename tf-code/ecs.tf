@@ -20,7 +20,7 @@ resource "aws_ecs_cluster" "main" {
 resource "aws_ecs_task_definition" "main" {
   family                   = "${var.projectname}-task-${var.env}"
   network_mode             = "host"
-  memory                   = 500
+  memory                   = 400
   requires_compatibilities = ["EC2"]
 
   container_definitions    = jsonencode([{
