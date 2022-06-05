@@ -3,7 +3,9 @@
 This application/terraform setup can be used to setup the AWS infrastructure
 for a dockerized application running on ECS with EC2 launch configuration.
 
-![Screenshot](diagram.png)
+
+![Diagram](diagram.png)
+
 
 ## Resources
 
