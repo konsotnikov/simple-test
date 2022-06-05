@@ -9,7 +9,7 @@ cnx = mysql.connector.connect(
     host="<rds_dns_host_from_output>", ##ToDo - remove hardcode here
     port=3306,
     user="root",
-    password="Some_Password_12345")
+    password="<Some_Password_12345>")
 
 # Get a cursor to manage database
 cur = cnx.cursor(buffered=True)
